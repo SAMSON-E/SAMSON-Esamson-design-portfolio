@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0c120f">
+<title>Samson Design | Email Marketing & Graphic Design</title>
+<meta name="description" content="Samson Design creates email campaigns, automated email flows, brand visuals, and responsive websites for growing businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f4ee;--fg:#101612;--card:#fff;--line:#dce2d9;--mut:#5a655d;--lime:#b8f04a;--deep:#0c120f;--deepcard:#151d18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.65 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3,.display{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.035em;line-height:1.04;margin:0}
+a{color:inherit}img{max-width:100%;display:block}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+section{padding:88px 0}.dark{background:var(--deep);color:var(--bg)}.muted{color:var(--mut)}.dark .muted{color:#a5b0a7}
+header{background:var(--deep);color:var(--bg);overflow:hidden}.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:800 22px "Bricolage Grotesque";text-decoration:none}.brand span{color:var(--lime)}.navlinks{display:flex;gap:24px;align-items:center}.navlinks a{text-decoration:none;font-size:14px;color:#dce4dc}.navlinks a:hover{color:var(--lime)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--lime);border-radius:99px;padding:13px 20px;background:var(--lime);color:var(--deep);font-weight:700;text-decoration:none;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}.btn.out{background:transparent;color:var(--bg);border-color:#455148}.btn.lightout{background:transparent;color:var(--fg);border-color:var(--line)}
+.hero{padding:62px 0 94px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:54px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--lime);font-size:13px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:18px}.eyebrow:before{content:"";width:24px;height:2px;background:var(--lime)}h1{font-size:clamp(52px,8vw,96px);max-width:740px}h1 em{font-style:normal;color:var(--lime)}.intro{font-size:19px;line-height:1.55;color:#b4beb5;max-width:580px;margin:24px 0 28px}.actions{display:flex;flex-wrap:wrap;gap:12px}.hero-art{position:relative;min-height:380px;border:1px solid #344037;border-radius:28px;padding:16px;background:radial-gradient(circle at 70% 20%,#33452c,transparent 40%),#141d17;overflow:hidden}.art-top{display:flex;justify-content:space-between;color:#aab6aa;font-size:12px;letter-spacing:.1em;text-transform:uppercase}.mail-card{position:absolute;inset:70px 35px 30px 35px;background:#f8f6ef;color:#142019;border-radius:15px;padding:22px;box-shadow:0 20px 60px #0006;transform:rotate(-3deg)}.mail-label{font-size:10px;letter-spacing:.15em;color:#697467;font-weight:700}.mail-card h3{font-size:clamp(24px,3vw,38px);margin:18px 0 10px}.mail-card p{font-size:13px;color:#637064;line-height:1.5}.mockbtn{display:inline-block;margin-top:9px;padding:9px 14px;background:#b8f04a;border-radius:99px;font-size:11px;font-weight:700}.mockline{height:8px;border-radius:8px;background:#e0e5d9;margin-top:12px}.mockline.short{width:62%}.float-tag{position:absolute;right:13px;bottom:22px;background:var(--lime);color:#101612;padding:11px 15px;border-radius:12px;font-size:12px;font-weight:800;transform:rotate(4deg)}
+.ticker{background:var(--lime);color:var(--deep);padding:14px 0;overflow:hidden;font:800 17px "Bricolage Grotesque";white-space:nowrap}.ticker div{display:flex;justify-content:space-around;gap:28px;flex-wrap:wrap}.ticker span:after{content:" ✦";padding-left:25px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:34px}.section-head h2{font-size:clamp(36px,5vw,58px);max-width:680px}.section-head p{max-width:380px;margin:0;color:var(--mut)}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:25px;border:1px solid var(--line);border-radius:20px;background:var(--card)}.num{color:#71933c;font-weight:800;font-size:13px;letter-spacing:.12em}.service h3{font-size:25px;margin:18px 0 10px}.service p{margin:0;color:var(--mut);font-size:15px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.chips span{font-size:12px;padding:6px 10px;border:1px solid var(--line);border-radius:99px}
+.workgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.project{min-width:0}.thumb{display:block;aspect-ratio:4/4.4;background:#e3e8dc;border-radius:18px;overflow:hidden;border:1px solid var(--line)}.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .35s}.project:hover .thumb img{transform:scale(1.025)}.project h3{font-size:21px;margin:13px 0 4px}.project p{font-size:14px;color:var(--mut);margin:0}.tag{display:inline-block;margin-top:9px;color:#52683a;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.webproject{background:linear-gradient(145deg,#17231b,#30432d);color:#f4f5ed;border-radius:18px;aspect-ratio:4/4.4;padding:20px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.browserbar{height:12px;border-radius:99px;background:#52624f;width:60%}.webscreen{background:#f2f4ee;color:#101612;border-radius:10px;padding:20px;min-height:170px;transform:rotate(-3deg);box-shadow:0 15px 30px #0003}.webscreen small{font-size:9px;color:#6a7568}.webscreen strong{display:block;font:800 28px/1 "Bricolage Grotesque";margin:14px 0}.webscreen span{display:block;background:#b8f04a;height:14px;width:65%;border-radius:99px}.webproject .caption{font-size:12px;color:#b6c0b5}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{border-top:2px solid var(--lime);padding-top:17px}.step b{font:800 24px "Bricolage Grotesque";display:block;margin-bottom:9px}.step p{font-size:14px;color:#b4beb5;margin:0}
+.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}.aboutgrid h2{font-size:clamp(36px,5vw,58px)}.aboutgrid p{color:var(--mut)}.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.skills span{border:1px solid var(--line);border-radius:99px;padding:8px 13px;font-size:13px}.note{border-left:3px solid var(--lime);padding:4px 0 4px 18px;color:#c1c9c1}.contact{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}.contact h2{font-size:clamp(42px,7vw,78px);max-width:740px}.contact p{color:#b4beb5;max-width:580px}.email{color:var(--lime);font-size:clamp(18px,3vw,27px);font-weight:700;word-break:break-word}.socials{display:flex;gap:17px;flex-wrap:wrap;margin-top:22px}.socials a{color:#cbd3ca;text-decoration:none;font-size:14px}.socials a:hover{color:var(--lime)}footer{padding:24px 0;color:#98a398;font-size:13px;border-top:1px solid #28342b}.footrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:820px){.hero{grid-template-columns:1fr;gap:25px;padding-top:40px}.hero-art{min-height:340px;max-width:550px;width:100%;margin:auto}.services{grid-template-columns:1fr 1fr}.workgrid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.aboutgrid{grid-template-columns:1fr;gap:20px}.contact{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}.navlinks{display:none}}
+@media(max-width:540px){section{padding:62px 0}.wrap{width:min(100% - 30px,1120px)}.services,.workgrid,.process{grid-template-columns:1fr}.hero-art{min-height:315px}.mail-card{inset:66px 25px 25px}.workgrid{gap:28px}.thumb,.webproject{aspect-ratio:1/1.05}.nav{height:70px}.actions .btn{width:100%}.section-head h2{font-size:39px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <nav class="nav" aria-label="Main navigation">
+   <a class="brand" href="#">Samson<span>Design.</span></a>
+   <div class="navlinks"><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+   <a class="btn" href="#contact">Start a project ↗</a>
+  </nav>
+  <div class="hero">
+   <div>
+    <div class="eyebrow">Independent designer · Available for projects</div>
+    <h1>Emails that connect.<br><em>Design that works.</em></h1>
+    <p class="intro">I help growing businesses create polished email campaigns, thoughtful brand visuals, and responsive website experiences that make their message easier to understand.</p>
+    <div class="actions"><a class="btn" href="#work">Explore my work ↓</a><a class="btn out" href="https://www.upwork.com/freelancers/~01202d64e8e0fc73cf?mp_source=share" target="_blank" rel="noopener">Hire me on Upwork ↗</a></div>
+   </div>
+   <div class="hero-art" aria-label="Illustration of an email campaign design">
+    <div class="art-top"><span>Campaign concept / 001</span><span>Samson Design</span></div>
+    <div class="mail-card"><div class="mail-label">A NOTE FROM YOUR BRAND</div><h3>A better inbox<br>experience starts here.</h3><p>Clear message. Thoughtful layout. A visual system your customers recognize.</p><div class="mockline"></div><div class="mockline short"></div><span class="mockbtn">Explore the collection ↗</span></div>
+    <div class="float-tag">EMAIL · BRAND · WEB</div>
+   </div>
+  </div>
+ </div>
+</header>
+<div class="ticker"><div class="wrap"><span>Email campaign design</span><span>Lifecycle flows</span><span>Brand visuals</span><span>Responsive websites</span></div></div>
+<main>
+<section id="services">
+ <div class="wrap">
+  <div class="section-head"><h2>Creative support for your next stage.</h2><p>From the first welcome email to the campaign that brings customers back, I design with clarity, consistency, and your audience in mind.</p></div>
+  <div class="services">
+   <article class="service"><span class="num">01 / EMAIL</span><h3>Email marketing design</h3><p>Campaigns and automated email flows designed to look professional, read clearly, and work across desktop and mobile.</p><div class="chips"><span>Welcome emails</span><span>Newsletters</span><span>Product launches</span><span>Promotions</span></div></article>
+   <article class="service"><span class="num">02 / GRAPHIC DESIGN</span><h3>Brand & campaign visuals</h3><p>Consistent visual assets that help your brand show up clearly across digital channels and customer touchpoints.</p><div class="chips"><span>Social media</span><span>Campaign graphics</span><span>Product visuals</span><span>Brand systems</span></div></article>
+   <article class="service"><span class="num">03 / WEB</span><h3>Website design</h3><p>Clean, responsive web experiences with clear hierarchy, purposeful content, and a consistent visual identity.</p><div class="chips"><span>Landing pages</span><span>Responsive layouts</span><span>Portfolio sites</span><span>UI design</span></div></article>
+  </div>
+ </div>
+</section>
+<section id="work" class="dark">
+ <div class="wrap">
+  <div class="section-head"><h2>Selected work.</h2><p>A selection of email concepts, campaign layouts, and visual explorations. Brand-inspired pieces are presented as portfolio concepts, not client endorsements.</p></div>
+  <div class="workgrid">
+   <article class="project"><a class="thumb" href="images/solvea-responsive-email.png" target="_blank" rel="noopener"><img src="images/solvea-responsive-email.png" alt="Solvéa Skin responsive email showcase" loading="lazy"></a><span class="tag">Responsive email</span><h3>Solvéa Skin</h3><p>Skincare campaign concept with a calm, product-led visual hierarchy.</p></article>
+   <article class="project"><a class="thumb" href="images/sola-skin-campaign.png" target="_blank" rel="noopener"><img src="images/sola-skin-campaign.png" alt="Sola Skin September email campaign collection" loading="lazy"></a><span class="tag">Campaign collection</span><h3>Sola Skin — September</h3><p>A collection of promotional email directions and seasonal campaign layouts.</p></article>
+   <article class="project"><a class="thumb" href="images/welcome-email.png" target="_blank" rel="noopener"><img src="images/welcome-email.png" alt="Welcome email design in a blush pink color palette" loading="lazy"></a><span class="tag">Lifecycle flow</span><h3>Welcome email</h3><p>A warm first-touch email concept with a clear message and structured content.</p></article>
+   <article class="project"><a class="thumb" href="images/fitness-abandoned-cart.jpg" target="_blank" rel="noopener"><img src="images/fitness-abandoned-cart.jpg" alt="Fitness and wellness abandoned cart email design" loading="lazy"></a><span class="tag">Abandoned cart</span><h3>Fitness & Wellness</h3><p>An abandoned-cart flow concept built around product discovery and a return-to-shop action.</p></article>
+   <article class="project"><a class="thumb" href="images/vegmilk-retention-flow.jpg" target="_blank" rel="noopener"><img src="images/vegmilk-retention-flow.jpg" alt="VEGMILK post-purchase and customer retention email flow" loading="lazy"></a><span class="tag">Post-purchase flow</span><h3>VEGMILK retention</h3><p>A customer follow-up concept focused on post-purchase engagement and retention.</p></article>
+   <article class="project"><a class="thumb" href="images/voltivine-welcome-board.png" target="_blank" rel="noopener"><img src="images/voltivine-welcome-board.png" alt="VoltVine welcome email design board" loading="lazy"></a><span class="tag">Email design system</span><h3>VoltVine welcome board</h3><p>A vibrant email visual direction with a bold palette and modular content blocks.</p></article>
+   <article class="project"><a class="thumb" href="images/email-design-showcase.jpg" target="_blank" rel="noopener"><img src="images/email-design-showcase.jpg" alt="Long-form email marketing design showcase" loading="lazy"></a><span class="tag">Email layout</span><h3>Product storytelling email</h3><p>A long-form product email layout using imagery and section-by-section storytelling.</p></article>
+   <article class="project"><a class="thumb" href="images/email-design-board-1.jpg" target="_blank" rel="noopener"><img src="images/email-design-board-1.jpg" alt="Email design board showing multiple layout variations" loading="lazy"></a><span class="tag">Design exploration</span><h3>Email layout explorations</h3><p>Multiple content and layout directions organized into a visual board.</p></article>
+   <article class="project"><a class="thumb" href="images/email-design-board-2.jpg" target="_blank" rel="noopener"><img src="images/email-design-board-2.jpg" alt="Email design board in forest green and cream" loading="lazy"></a><span class="tag">Campaign concepts</span><h3>Green & cream campaign board</h3><p>A coordinated set of email concepts using a restrained, editorial palette.</p></article>
+   <article class="project"><a class="thumb" href="images/kfc-promo-concept.jpg" target="_blank" rel="noopener"><img src="images/kfc-promo-concept.jpg" alt="KFC promotional email concept study" loading="lazy"></a><span class="tag">Promotional concept</span><h3>Food promotion concept</h3><p>A brand-inspired promotional email study. Not affiliated with or commissioned by KFC.</p></article>
+   <article class="project"><a class="thumb" href="images/gucci-promo-concept.jpg" target="_blank" rel="noopener"><img src="images/gucci-promo-concept.jpg" alt="Luxury fashion promotional email concept study" loading="lazy"></a><span class="tag">Luxury concept</span><h3>Luxury fashion concept</h3><p>An editorial-style fashion promotion study. Not affiliated with or commissioned by Gucci.</p></article>
+   <article class="project"><div class="webproject"><div class="browserbar"></div><div class="webscreen"><small>SAMSON DESIGN / WEBSITE CONCEPT</small><strong>Design that<br>works.</strong><p style="font-size:11px;color:#687568">Responsive layouts. Clear hierarchy. Purposeful content.</p><span></span></div><div class="caption">Website design · Responsive layout · Portfolio presentation</div></div><span class="tag">Web design</span><h3>Responsive portfolio website</h3><p>A responsive portfolio experience focused on services, selected work, and clear contact paths.</p></article>
+  </div>
+ </div>
+</section>
+<section class="dark" style="padding-top:0">
+ <div class="wrap">
+  <div class="section-head"><h2>A straightforward process.</h2><p>Clear expectations and communication from the first message to final delivery.</p></div>
+  <div class="process">
+   <div class="step"><b>01. Discover</b><p>We clarify your audience, goals, content, brand guidelines, and deliverables.</p></div>
+   <div class="step"><b>02. Design</b><p>I develop the visual direction and share the design for your feedback.</p></div>
+   <div class="step"><b>03. Refine</b><p>We review the agreed scope and make revisions based on your feedback.</p></div>
+   <div class="step"><b>04. Deliver</b><p>You receive the agreed final files or email-platform work, ready for the next step.</p></div>
+  </div>
+ </div>
+</section>
+<section id="about">
+ <div class="wrap aboutgrid">
+  <div><div class="eyebrow" style="color:#52683a">About Samson Design</div><h2>Thoughtful visuals. Clear communication.</h2></div>
+  <div><p>I’m Samson, a graphic designer focused on email marketing design, brand visuals, and responsive web experiences. I care about how a design communicates, how it feels to use, and how consistently it represents a business.</p><p>I can support a single campaign or help create a more consistent visual experience across multiple touchpoints. Tell me what you’re building and we can define a scope that fits your needs.</p><div class="skills"><span>Adobe Photoshop</span><span>Adobe Illustrator</span><span>Adobe InDesign</span><span>Email campaign design</span><span>Lifecycle email flows</span><span>Website design</span></div></div>
+ </div>
+</section>
+<section class="dark" id="contact">
+ <div class="wrap contact">
+  <div><div class="eyebrow">Have a project in mind?</div><h2>Let’s make something useful.</h2><p>Need an email campaign, a customer journey flow, fresh brand visuals, or a responsive website? Send me a note with your goals and timeline.</p><a class="email" href="mailto:hello.samsoncreate@gmail.com">hello.samsoncreate@gmail.com</a><div class="socials"><a href="https://www.upwork.com/freelancers/~01202d64e8e0fc73cf?mp_source=share" target="_blank" rel="noopener">Upwork ↗</a><a href="https://www.behance.net/samsondavid7" target="_blank" rel="noopener">Behance ↗</a><a href="https://www.linkedin.com/in/samson-david-4a763a311/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://www.instagram.com/samsoncreative.co/" target="_blank" rel="noopener">Instagram ↗</a></div></div>
+  <div><a class="btn" href="mailto:hello.samsoncreate@gmail.com?subject=Project%20inquiry">Discuss a project ↗</a></div>
+ </div>
+</section>
+</main>
+<footer class="dark"><div class="wrap footrow"><span>© <span id="year"></span> Samson Design. All rights reserved.</span><span>Email marketing · Graphic design · Website design</span></div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
